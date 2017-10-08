@@ -1,12 +1,8 @@
-// Copyright (C) 2016-2017 Sergey Akopkokhyants
-// This project is licensed under the terms of the MIT license.
-// https://github.com/akserg
-
-import { Component } from '@angular/core';
+import { Component } from "@angular/core";
 
 @Component({
-    selector: 'multi-sortable',
-    template: `
+  selector: "multi-sortable",
+  template: `
 <h4>Multi list sortable</h4>
 <div class="row">
     <div class="col-sm-3">
@@ -48,7 +44,18 @@ import { Component } from '@angular/core';
 </div>`
 })
 export class MultiSortableComponent {
-    listBoxers: Array<string> = ['Sugar Ray Robinson', 'Muhammad Ali', 'George Foreman', 'Joe Frazier', 'Jake LaMotta', 'Joe Louis', 'Jack Dempsey', 'Rocky Marciano', 'Mike Tyson', 'Oscar De La Hoya'];
-    listTeamOne: Array<string> = [];
-    listTeamTwo: Array<string> = [];
+  listBoxers: Array<string> = [
+    "Sugar Ray Robinson",
+    "Muhammad Ali",
+    "George Foreman",
+    "Joe Frazier",
+    "Jake LaMotta",
+    "Joe Louis",
+    "Jack Dempsey",
+    "Rocky Marciano",
+    "Mike Tyson",
+    "Oscar De La Hoya"
+  ];
+  listTeamOne: Array<string> = [];
+  listTeamTwo: Array<string> = [];
 }

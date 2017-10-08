@@ -1,12 +1,8 @@
-// Copyright (C) 2016-2017 Sergey Akopkokhyants
-// This project is licensed under the terms of the MIT license.
-// https://github.com/akserg
-
-import {Component} from '@angular/core';
+import { Component } from "@angular/core";
 
 @Component({
-    selector: 'simple-sortable-copy',
-    template: `
+  selector: "simple-sortable-copy",
+  template: `
 <h4>Simple sortable With Drop into something, without delete it</h4>
 <div class="row">
     <div class="col-sm-3">
@@ -37,17 +33,19 @@ import {Component} from '@angular/core';
 </div>`
 })
 export class SimpleSortableCopyComponent {
+  sourceList: Widget[] = [
+    new Widget("1"),
+    new Widget("2"),
+    new Widget("3"),
+    new Widget("4"),
+    new Widget("5"),
+    new Widget("6")
+  ];
 
-    sourceList: Widget[] = [
-        new Widget('1'), new Widget('2'),
-        new Widget('3'), new Widget('4'),
-        new Widget('5'), new Widget('6')
-    ];
-
-    targetList: Widget[] = [];
-    addTo($event: any) {
-        this.targetList.push($event.dragData);
-    }
+  targetList: Widget[] = [];
+  addTo($event: any) {
+    this.targetList.push($event.dragData);
+  }
 }
 
 class Widget {

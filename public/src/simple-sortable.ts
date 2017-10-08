@@ -1,12 +1,8 @@
-// Copyright (C) 2016-2017 Sergey Akopkokhyants
-// This project is licensed under the terms of the MIT license.
-// https://github.com/akserg
-
-import {Component} from '@angular/core';
+import { Component } from "@angular/core";
 
 @Component({
-    selector: 'simple-sortable',
-    template: `
+  selector: "simple-sortable",
+  template: `
 <h4>Simple sortable</h4>
 <div class="row">
     <div class="col-sm-3">
@@ -32,5 +28,11 @@ import {Component} from '@angular/core';
 </div>`
 })
 export class SimpleSortableComponent {
-    listOne: Array<string> = ['Coffee', 'Orange Juice', 'Red Wine', 'Unhealty drink!', 'Water'];
+  listOne: Array<string> = [
+    "Coffee",
+    "Orange Juice",
+    "Red Wine",
+    "Unhealty drink!",
+    "Water"
+  ];
 }

@@ -1,12 +1,8 @@
-// Copyright (C) 2016-2017 Sergey Akopkokhyants
-// This project is licensed under the terms of the MIT license.
-// https://github.com/akserg
-
-import {Component} from '@angular/core';
+import { Component } from "@angular/core";
 
 @Component({
-    selector: 'zone-dnd',
-    template: `
+  selector: "zone-dnd",
+  template: `
 <h4>Restricted Drag-and-Drop with zones</h4>
 <div class="row">
     <div class="col-sm-3">
@@ -53,6 +49,6 @@ import {Component} from '@angular/core';
 </div>`
 })
 export class ZoneDndComponent {
-    restrictedDrop1: any = null;
-    restrictedDrop2: any = null;
+  restrictedDrop1: any = null;
+  restrictedDrop2: any = null;
 }

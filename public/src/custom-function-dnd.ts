@@ -1,12 +1,8 @@
-// Copyright (C) 2016-2017 Sergey Akopkokhyants
-// This project is licensed under the terms of the MIT license.
-// https://github.com/akserg
-
-import { Component } from '@angular/core';
+import { Component } from "@angular/core";
 
 @Component({
-    selector: 'custom-function-dnd',
-    template: `
+  selector: "custom-function-dnd",
+  template: `
 <h4>Use a custom function to determine where dropping is allowed</h4>
 <div class="row">
     <div class="col-sm-3">
@@ -60,21 +56,21 @@ import { Component } from '@angular/core';
 `
 })
 export class CustomFunctionDndComponent {
-    box1Integer: number = 3;
-    box2Integer: number = 10;
+  box1Integer: number = 3;
+  box2Integer: number = 10;
 
-    box1Items: string[] = [];
-    box2Items: string[] = [];
+  box1Items: string[] = [];
+  box2Items: string[] = [];
 
-    allowDropFunction(baseInteger: number): any {
-        return (dragData: any) => dragData % baseInteger === 0;
-    }
+  allowDropFunction(baseInteger: number): any {
+    return (dragData: any) => dragData % baseInteger === 0;
+  }
 
-    addTobox1Items($event: any) {
-        this.box1Items.push($event.dragData);
-    }
+  addTobox1Items($event: any) {
+    this.box1Items.push($event.dragData);
+  }
 
-    addTobox2Items($event: any) {
-        this.box2Items.push($event.dragData);
-    }
+  addTobox2Items($event: any) {
+    this.box2Items.push($event.dragData);
+  }
 }

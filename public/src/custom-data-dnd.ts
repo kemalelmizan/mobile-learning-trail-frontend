@@ -1,12 +1,8 @@
-// Copyright (C) 2016-2017 Sergey Akopkokhyants
-// This project is licensed under the terms of the MIT license.
-// https://github.com/akserg
-
-import {Component} from '@angular/core';
+import { Component } from "@angular/core";
 
 @Component({
-    selector: 'custom-data-dnd',
-    template: `
+  selector: "custom-data-dnd",
+  template: `
 <h4>Transfer custom data in Drag-and-Drop</h4>
 <div class="row">
     <div class="col-sm-3">
@@ -33,10 +29,10 @@ import {Component} from '@angular/core';
 </div>`
 })
 export class CustomDataDndComponent {
-    transferData: Object = {id: 1, msg: 'Hello'};
-    receivedData: Array<any> = [];
+  transferData: Object = { id: 1, msg: "Hello" };
+  receivedData: Array<any> = [];
 
-    transferDataSuccess($event: any) {
-        this.receivedData.push($event);
-    }
+  transferDataSuccess($event: any) {
+    this.receivedData.push($event);
+  }
 }

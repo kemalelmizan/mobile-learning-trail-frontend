@@ -1,12 +1,8 @@
-// Copyright (C) 2016-2017 Sergey Akopkokhyants
-// This project is licensed under the terms of the MIT license.
-// https://github.com/akserg
-
-import {Component} from '@angular/core';
+import { Component } from "@angular/core";
 
 @Component({
-    selector: 'recycle-multi-sortable',
-    template: `
+  selector: "recycle-multi-sortable",
+  template: `
 <h4>Simple sortable With Drop into recycle bin</h4>
 <div class="row">
     <div class="col-sm-3">
@@ -35,6 +31,12 @@ import {Component} from '@angular/core';
 </div>`
 })
 export class RecycleMultiSortableComponent {
-    listOne: Array<string> = ['Coffee', 'Orange Juice', 'Red Wine', 'Unhealty drink!', 'Water'];
-    listRecycled: Array<string> = [];
+  listOne: Array<string> = [
+    "Coffee",
+    "Orange Juice",
+    "Red Wine",
+    "Unhealty drink!",
+    "Water"
+  ];
+  listRecycled: Array<string> = [];
 }
